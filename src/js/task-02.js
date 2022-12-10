@@ -8,26 +8,19 @@ const ingredients = [
 ];
 
 
-// Задание 2​
 
-// В HTML есть пустой список ul#ingredients.
+const ingredientListEl = document.querySelector('#ingredients');
 
-// <ul id="ingredients"></ul>
+const makeIngredientsItem = value => {
+return value.map((ingredient) => {
+  const ingredientItem = document.createElement('li');
+  ingredientItem.classList.add('item');
+  ingredientItem.textContent = ingredient;
+  ingredientListEl.append(ingredientItem);
+})
+}
+console.dir(ingredientListEl);
+makeIngredientsItem(ingredients);
 
-// В JavaScript есть массив строк.
 
-// const ingredients = [
-//   "Potatoes",
-//   "Mushrooms",
-//   "Garlic",
-//   "Tomatos",
-//   "Herbs",
-//   "Condiments",
-// ];
 
-// Напиши скрипт, который для каждого элемента массива ingredients:
-
-// Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
-// Добавит название ингредиента как его текстовое содержимое.
-// Добавит элементу класс item.
-// После чего вставит все <li> за одну операцию в список ul#ingredients.
