@@ -24,3 +24,11 @@
 // #validation-input.invalid {
 //   border-color: #f44336;
 // }
+
+const inputEl = document.querySelector('#validation-input');
+
+const onInput = () => {
+
+}
+
+inputEl.addEventListener('input', onInput);
