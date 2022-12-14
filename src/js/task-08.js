@@ -12,9 +12,7 @@ const userLog = {
 
  email.value === ''|| password.value === '' 
 ? alert ('Всі поля повинні бути заповнені') 
-: console.log(userLog);
-
-formEl.reset();
+: console.log(userLog, formEl.reset());
 
 }
 

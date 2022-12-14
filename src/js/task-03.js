@@ -17,7 +17,7 @@ const galleryListEl = document.querySelector('.gallery');
 
 const makeGalleryItem = function (value) {
   return value.map((elem) => {
-    const galleryItemEl = `<li><img src="${elem.url}" alt="${elem.alt}"></li>`
+    const galleryItemEl = `<li><img class="gallery-img" src="${elem.url}" alt="${elem.alt}"></li>`
     galleryListEl.insertAdjacentHTML('beforeend',galleryItemEl);
   })
 }

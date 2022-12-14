@@ -3,7 +3,7 @@ const inputEl = document.querySelector('#validation-input');
 
 const onInput = (event) => {    
    let userName = inputEl.value;
-    return userName.length >= inputEl.dataset.length 
+    return userName.length === Number(inputEl.dataset.length) 
     ? inputEl.classList.add('valid') 
     : inputEl.classList.add('invalid');
     
